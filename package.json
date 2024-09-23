@@ -1,0 +1,41 @@
+{
+  "name": "about-xss",
+  "version": "0.0.1",
+  "description": "xss 跨站脚本攻击",
+  "main": "lunch.js",
+  "scripts": {
+    "start": "nodemon node lunch.js",
+    "hacker": "nodemon node hacker.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smileBeauty/about-xss.git"
+  },
+  "keywords": [
+    "xss",
+    "跨站脚本攻击"
+  ],
+  "author": "smileBeauty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smileBeauty/about-xss/issues"
+  },
+  "homepage": "https://github.com/smileBeauty/about-xss#readme",
+  "dependencies": {
+    "@koa/bodyparser": "^5.1.1",
+    "@koa/cors": "^5.0.0",
+    "@koa/router": "^13.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "koa": "^2.15.3",
+    "koa-session": "^6.4.0",
+    "koa-static": "^5.0.0",
+    "xss": "^1.0.15"
+  },
+  "devDependencies": {
+    "@types/koa__router": "^12.0.4",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.4"
+  }
+}

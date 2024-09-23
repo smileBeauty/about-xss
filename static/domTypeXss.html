@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM型XSS</title>
+</head>
+
+<body>
+  <div>DOM型XSS</div>
+  <p>请输入您的名字：</p>
+  <input type="text" id="userInput">
+  <button onclick="displayInput()">提交</button>
+  <p>你好, <span id="greeting"></span>!</p>
+  <!-- input输入 <img src="http://localhost:8081/static/a.js" /> -->
+  <script>  
+    function displayInput() {  
+      var userInput = document.getElementById('userInput').value;  
+      document.getElementById('greeting').innerHTML = userInput;  
+    }  
+</script> 
+</body>
+
+</html>
